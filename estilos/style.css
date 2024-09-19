@@ -56,8 +56,12 @@ section#redes-sociais > a > img {
     margin: 10px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.562);
+    box-sizing: border-box;  /*para não mexer nos outros links e tirar do sitio*/
 }
 
 section#redes-sociais > a > img:hover {
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.623);
+    transform: translate(-3px, 3px);
+    box-shadow: 5px 5px 10px black;
+    transition: transform .2s, border .05s; /*para demorar a fazer a transição do hover e depois da border branca*/
 }
